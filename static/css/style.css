@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video 
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+:root
+{
+    --black: rgba(0, 0, 0, 1);
+    --black1: rgba(9,9,9, 1);
+    --black2: rgba(42, 42, 42, 1);
+    --gray: rgba(217, 217, 217, 1);
+    --white: rgba(255, 255, 255, 1);
+    --green: rgba(141, 224, 44, 1);
+    --dark-green: rgba(93,120,59,1);
+    --yellow-green: rgba(148,114,64);
+    --green-blue: rgba(0, 168, 132, 1);
+    --blue: rgba(64, 138, 148, 1);
+    --text-subdue: rgba(167, 167, 167, 1);
+    --text-base: rgba(255, 255, 255, 1);
+    --border-white: rgba(255, 255, 255, .3);
+}
+
+body
+{
+    min-height:100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container
+{
+    position: relative;
+    display: grid;
+    grid-template-areas: "navigation main";
+    grid-template-columns: 232px auto;
+    grid-template-rows: 100%;
+}
+
+
+
+.container .navigation
+{
+    grid-area: navigation;
+    position: fixed;
+    width: 232px;
+    height: 100%;
+    background: var(--black);
+    border-left: 10px solid var(--black);
+    transition: 0.5s;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    cursor: default;
+    display:flex;
+    flex-direction: column;
+    min-height: 0;
+    padding-top: 24px;
+}
+
+
+.navigation .nav-logo
+{
+    padding:0 8px;
+    margin-bottom: 18px;
+}
+
+.nav-logo .cyberaudio--logo--text
+{
+    height:40px;
+    max-width:80%;
+    width: 100%;
+    padding-left: 10px;
+    fill:var(--white);
+}
+
+.navigation .nav-items
+{
+    padding: 0;
+    height: 100%;
+}
+
+.navigation .nav-items ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color:var(--white);
+}
+
+.navigation .nav-items ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    padding:0 8px;
+}
+
+.navigation .nav-items ul li a
+{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    display:flex;
+    color: var(--gray);
+    border-radius: 4px;
+}
+
+
+.navigation .nav-items ul li a .icon-svg
+{
+    position: relative;
+    min-width: 70px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    fill: var(--white);
+    -webkit-box-align: center;
+}
+.navigation .nav-items ul li a svg.active
+{
+    display:none;
+}
+.navigation .nav-items ul li a svg.inactive
+{
+    display: inline;
+}
+
+.navigation .nav-items ul li a.trigger svg.active
+{
+    display: inline;
+}
+.navigation .nav-items ul li a.trigger svg.inactive
+{
+    display: none;
+}
+
+
+.navigation .nav-items ul li a .icon-title
+{
+    position:relative;
+    display: block;
+    padding: 0 px;
+    height: 50px;
+    line-height: 50px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.navigation .nav-items ul li:hover a,
+.navigation .nav-items ul li.hovered a
+{
+    color: var(--white)
+}
+
+
+.navigation .nav-items a:visited
+{
+    background: rgba(44, 44 , 44, .8);
+}
+
+.container .main
+{
+    grid-area: main;
+    position: relative;
+    background-color: var(--black1);
+    fill: var(--black1);
+    min-height: 100vh;
+}
+
+

@@ -1,0 +1,119 @@
+.library-show-main
+{
+    font-family: 'Montserrat', sans-serif;
+    min-height:100vh;
+    max-height:100vh;
+    margin:0;
+    color:#fff;
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    background: var(--black2);
+    background: -webkit-linear-gradient(to top, #232526, #414345);
+}
+.lib-show-prev-page
+{
+    margin: 0;
+    padding: 0;
+    border:0;
+    height: 40px;
+    background-color: transparent;
+}
+.previous-page{
+    height: 40px;
+}
+.top-nav {
+    height: 40px;
+    background-color: var(--black1);
+    display: grid;
+    grid-template-columns:40px auto;
+}
+.previous-page .previous-page-icon
+{
+    fill: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+
+}
+
+.inst-select{
+    position:relative;
+    height:100%;
+    top:10px;
+    margin-left:calc(100% - 90px);
+    width:100px;
+}
+
+.myslide {
+    margin-top: 3%;
+    height:90%;
+    display:none;
+    background-color: white;
+}
+
+.transcript{
+    height:calc(100vh - 120px);
+    margin:auto;
+    text-align:center;
+}
+.player {
+    z-index:10;
+    background: #F1F3F4;
+    color:#000;
+    min-height:80px;
+    max-height:80px;
+    display:flex;
+    flex-direction:row;
+}
+.player .left {
+    width:80px;
+    background-image:url("../asset/music-icon.png");
+    background-size:cover;
+}
+.player .right {
+    flex-grow:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.player .right .top {
+          flex-grow:1;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          padding-left:10px;
+}
+
+.player .right .top a
+{
+    text-decoration: none;
+    color:var(--black1)
+}
+
+.player .right .top .song {
+    font-size:1.2em;
+    font-weight:600;
+}
+.player .right .bottom {
+    display:flex;
+
+}
+
+.player .right .bottom video{
+    flex-grow:1;
+    height:32px;
+}
+
+video::-webkit-progress-value { background: blue; }
+
+
+@keyframes pop-in {
+   0%, 95%{
+      transform:translateY(100%);
+   }
+   100%{
+      transform:translateY(0%);
+   }
+}

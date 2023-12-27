@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+div.library-main{
+    width: 100%;
+    background-color: var(--black1);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div.library-container {
+    left: 30px;
+    top: 20px;
+    right: 30px;
+
+    height: calc(100% - 20px);
+    width: calc(100% - 60px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+div.item{
+    position : relative;
+    /* margin : 5px; */
+    padding: 15px 10px 10px 15px;
+    height: 250px;
+    background-color: var(--text-subdue);
+    width: calc(100%-5px);
+    border-width: 1px;
+    border-radius: 10px;
+}
+div.item-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+}
+div.icon{
+    color: var(--white);
+    display:flex;
+    width:50px;
+    height: 25px;
+    align-items:center;
+    justify-content:center;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 15%;
+}
+
+div.icon-vocal{
+    background-color: var(--blue);
+}
+
+div.icon-drum{
+    background-color: var(--yellow-green);
+}
+
+div.icon-bass{
+    background-color: var(--dark-green);
+}
+div.transcript {
+    overflow: auto;
+    height:170px;
+    white-space: nowrap;
+}
+div.item {
+    margin-bottom: 15px;
+}
+h2 {
+    color: var(--white);
+    padding-right: 5px;
+}
+img.sheet {
+    height: 150px;
+    margin-left: 5px;
+    background-color: white;
+}
+
+
+/* width */
+div::-webkit-scrollbar {
+    height: 10px;
+    background: #fff;
+}
+
+/* Track */
+div::-webkit-scrollbar-track {
+    background: var(--text-subdue); 
+}
+
+/* Handle */
+div::-webkit-scrollbar-thumb {
+    background: var(--gray); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+div::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

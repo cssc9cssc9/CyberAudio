@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/css/transpose_style.css" type="text/css">
+    </head>
+    <body>
+        <div class="transpose-main">
+            <div class="transpose-container">
+                <div class="upload-audio">
+                    <div class="upload-audio-content" id="upload-audio-content">
+                        <label for="upload-audio-button-input">
+                            <div class="upload-audio-button">
+                                <svg class="audio-icon" viewBox="0 0 460 477" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M224.4 1.93328C223.867 2.86662 223.2 25.2666 222.933 51.6666C222.667 78.0666 222.133 100.067 221.6 100.467C221.067 101 217.867 101.8 214.4 102.2L208 103.133V63.8V24.3333L204.8 22.3333C202.4 20.7333 200.8 20.4666 198.933 21.5333C195.733 23.2666 194.667 36.8666 194.667 77.8V106.467L188.133 108.6L181.6 110.6L180.8 103.8C180.4 100.067 180 89 180 79.2666C180 61.9333 180 61.5333 176.8 60.2C174.667 59.1333 172.933 59.1333 171.067 60.2C167.867 61.8 166.667 73.1333 166.667 101V118.333L160.133 122.6L153.733 126.733L152.933 100.6C152.4 86.3333 152 67.4 152 58.7333C152 43.1333 152 42.8666 148.667 41.4C145.867 40.2 144.933 40.3333 142.667 42.3333C140.133 44.6 140 46.4666 140 91.8V138.733L133.067 146.867L126 155L125.333 129.4C124.933 115.267 124.133 102.867 123.6 101.933C122.933 101.133 120.8 100.333 118.8 100.333C116.667 100.333 114.4 101.133 113.6 101.933C112.8 103 112 118.733 111.733 143C111.2 181.8 111.067 182.467 107.333 194.333C103.733 205.667 103.6 207.667 103.6 229.667C103.6 251.8 103.733 253.667 107.467 265C111.333 276.867 111.333 277.4 112 316.867C112.667 360.2 112.8 360.467 120.267 358.6C123.2 357.8 123.733 356.867 124.533 349.533C124.933 345 125.333 326.333 125.333 308.2V275.133L121.067 260.067C117.067 246.467 116.667 243.4 116.667 227.667C116.8 207 119.6 195.4 128.8 177.667C140 155.933 157.867 138.067 179.067 127.667C194.933 119.8 207.067 116.467 222.667 115.533C255.333 113.533 284.667 124.2 308.4 146.867C325.867 163.533 336.267 181.533 341.467 203.8C343.867 214.333 344.267 219 343.733 233.933C343.2 249.267 342.533 253.4 338.933 264.333C336.667 271.267 332 281.667 328.533 287.4C320.933 300.6 305.733 316.467 293.6 324.333C288.4 327.667 284.133 330.6 284.133 331C284 331.4 286 333.933 288.4 336.733L292.667 341.8L299.733 337L306.667 332.2V345.933V359.667L313.733 368.333L320.667 377L321.333 348.333L322 319.667L328 311.933L334 304.333L335.067 329.933C335.733 344.2 336.8 356.333 337.6 357.267C339.333 359.4 344.267 359.533 346.4 357.4C347.6 356.2 348 345.8 348 318.6V281.267L352.4 267.133C356.533 253.4 356.667 252.333 356.533 229C356.533 205.8 356.4 204.467 352.267 191.4L348 177.8V140.6C348 113.533 347.6 103.133 346.4 101.933C344.267 99.8 337.467 99.9333 336.667 101.933C336.4 102.867 335.6 115.133 335.067 129.267L334 154.867L327.733 146.867L321.333 139V92.6V46.0666L318 43C315.2 40.4666 314.133 40.0666 311.6 41.2666L308.4 42.7333L307.467 83.9333C306.933 106.467 306.267 125.133 306 125.4C305.867 125.533 302.933 124.067 299.6 122.067L293.467 118.333L293.333 99C293.333 70.0666 292.267 61.6666 288.667 60.0666C286.533 59.1333 284.8 59.1333 282.8 60.2C280.133 61.6666 280 62.7333 279.867 82.7333C279.733 94.2 279.333 105.267 278.8 107.133L278 110.733L272 108.467L266 106.2L265.6 65.5333L265.333 24.8666L261.467 22.6C256.8 19.8 256.667 19.8 254.133 22.4666C252.267 24.2 252 29.9333 252 63.9333V103.267L247.867 102.467C245.6 102.067 242 101.667 239.867 101.667H236V53.5333C236 23 235.467 4.59995 234.667 2.86662C233.067 -0.0667168 226.133 -0.60005 224.4 1.93328Z" />
+                                    <path d="M86.1333 129.133C84.2667 131 84 141.533 84.2667 230.067L84.6667 328.867L88.2667 331C91.6 332.733 92.1333 332.733 94.2667 330.6C96.5333 328.333 96.6667 322.333 96.6667 229.8C96.6667 125.4 96.8 127 90.5333 127C89.3333 127 87.2 127.933 86.1333 129.133Z" />
+                                    <path d="M365.2 129.267C363.6 131 363.2 148.733 362.933 229.533L362.533 327.667L365.467 329.933C368.933 332.867 371.2 333 373.867 330.2C375.733 328.333 376 317.4 376 229.667C376 141.933 375.733 131 373.867 129.133C371.2 126.333 367.467 126.467 365.2 129.267Z" />
+                                    <path d="M271.067 157.933C270.533 158.867 269.733 164.467 269.333 170.2L268.667 180.867L242 190.467C227.333 195.667 214.133 200.467 212.8 201.133C210.533 202.067 210.267 201.667 211.2 197.533C211.6 195.133 212.533 192.733 213.067 192.2C213.6 191.8 223.467 187.933 234.933 183.8C246.4 179.533 256.533 175.267 257.467 174.2C258.667 172.733 258.8 171.133 257.867 168.6C256.667 165.533 255.867 165 251.333 165.133C248.4 165.267 237.6 168.467 227.333 172.333C200.933 182.2 199.467 183 198.533 187.667C198 189.933 197.6 205 197.467 221.267L197.333 251L189.6 250.2C180.533 249.267 173.333 252.067 167.6 259C160.667 267.133 160 277.133 165.733 287.4C169.867 294.867 176.133 298.2 186 298.2C195.733 298.2 202.267 294.867 206.933 287.267C209.867 282.6 210 280.867 210.667 249L211.333 215.667L238 206.067C252.667 200.733 265.733 196.467 267.067 196.333C269.067 196.333 269.333 197.933 269.333 210.733V225.133L260.8 224.6C250.4 223.933 243.333 227.267 238 235.267C234 241.267 233.467 252.6 236.8 259.933C241.333 269.4 254 274.867 265.067 272.067C271.867 270.333 280.667 262.067 281.867 256.2C282.267 253.933 282.667 231.133 282.667 205.8C282.667 171.533 282.267 159.133 281.067 157.933C278.933 155.8 272.4 155.933 271.067 157.933ZM266 241C270.267 245.133 270.267 251.133 266.4 255.533C261.2 261.267 252.133 260.333 248.667 253.667C243.067 242.733 257.333 232.2 266 241ZM191.867 265C198.667 268.467 199.333 275.933 193.467 281.8C188.667 286.467 184.133 286.733 179.2 282.467C176.4 280.067 175.467 278.2 175.467 274.333C175.467 270.467 176.4 268.6 179.2 266.2C183.333 262.467 186.667 262.2 191.867 265Z" />
+                                    <path d="M30 160.733C28.2667 163.533 28 172.6 28.2667 231.133L28.6667 298.2L32.2667 300.2C35.4667 302.067 36 302.067 38.5334 299.8C41.3334 297.267 41.3334 296.333 41.3334 229.267C41.3334 166.067 41.2 161.133 39.0667 159.533C35.4667 156.867 32.2667 157.267 30 160.733Z" />
+                                    <path d="M420.933 160.067C418.933 162.333 418.667 169.133 418.667 230.067V297.667L422 299.8C424.933 301.667 426 301.8 428.667 300.333L432 298.6V230.2C432 169.8 431.733 161.667 429.867 159.8C427.067 157 423.6 157.133 420.933 160.067Z" />
+                                    <path d="M58.4 173.8C56.1333 175 56 179 56 227.4C56 256.2 56.4 281 56.8 282.733C58 286.733 63.3333 288.067 66.6667 285C69.2 282.733 69.3333 280.467 69.3333 229.667C69.3333 180.067 69.2 176.6 66.9333 174.6C64.1333 172.067 61.7333 171.8 58.4 173.8Z" />
+                                    <path d="M392.933 174.733C390.933 177 390.667 182.733 390.667 229.933C390.667 279.267 390.8 282.733 393.067 284.733C396 287.4 398.533 287.533 401.733 285.133C403.867 283.533 404 279.267 404 229.267C404 177.133 403.867 175 401.467 173.667C397.733 171.667 395.333 172.067 392.933 174.733Z" />
+                                    <path d="M2.66667 203C1.06667 203.933 0.533337 208.733 0.266671 228.6C-0.133329 252.333 -0.133329 253 2.66667 255.267C6.26667 258.2 8.53334 258.333 11.2 255.533C12.9333 253.8 13.3333 249.533 13.3333 230.2C13.3333 216.6 12.8 205.8 12 204.2C10.5333 201.533 6 200.867 2.66667 203Z" />
+                                    <path d="M449.333 203C447.733 203.933 447.2 208.733 446.933 228.6C446.533 252.333 446.533 253 449.333 255.267C452.933 258.2 455.2 258.333 457.867 255.533C459.6 253.8 460 249.533 460 229.667C460 209.8 459.6 205.533 457.867 203.8C455.6 201.4 452.267 201.133 449.333 203Z" />
+                                    <path d="M176.133 352.333C147.467 388.333 124 418.467 124 419.4C124 423.8 127.067 424.333 152.267 424.333H177.333L177.6 449.933L178 475.667L229.2 476.067C265.867 476.2 280.933 475.933 282.133 474.867C283.6 473.667 284 467.933 284 448.867V424.333H307.867C321.067 424.333 332.667 423.933 333.867 423.533C335.067 423.133 336 421.4 336 419.8C336 417.8 318.533 394.733 287.2 355.533C231.6 285.8 232.667 287 230.133 287C229.067 287 204.8 316.467 176.133 352.333ZM276 356.6C300.533 387.4 320.8 413.133 321.067 413.8C321.333 414.467 311.2 415.133 298.4 415.267L275.333 415.667L274.933 441.267L274.667 467H230.667H186.667V442.467C186.667 423.8 186.267 417.667 184.933 416.467C183.867 415.667 174.533 414.867 160.933 414.733L138.8 414.333L184.267 357.267C209.2 325.933 230 300.333 230.533 300.333C230.933 300.467 251.467 325.667 276 356.6Z" />
+                                    <path d="M203.2 354.067L194.667 364.6V386.067C194.8 403 195.2 408.2 196.667 410.2C198.133 412.067 198.667 416.467 198.667 425.267C198.667 437.267 198.8 437.667 201.733 437.667C207.867 437.667 208 436.733 208 395.4V356.333H212.4C214.667 356.333 218 356.733 219.6 357.133L222.667 357.933L222.933 405.533L223.333 453L229.733 453.4L236 453.8V405.933V357.933L240.133 357.133C242.4 356.733 246 356.333 248.133 356.333H252V395.4C252 436.733 252.133 437.667 258.267 437.667C261.2 437.667 261.333 437.267 261.333 426.6C261.333 419.533 262 414.333 263.333 411.8C264.933 408.867 265.333 403 265.333 385.8V363.667L257.333 353.667L249.333 343.667L230.533 343.533H211.733L203.2 354.067Z" />
+                                    <path d="M280 388.6C280 397.4 280.933 399 285.867 399C288.267 399 290.667 398.6 291.067 398.067C291.867 397.4 287.067 390.467 281.067 383.667C280.533 383 280 385.267 280 388.6Z" />
+                                    <path d="M174.4 389.933C171.6 393.4 169.333 396.733 169.333 397.533C169.333 399.667 178.667 399.4 179.467 397.133C179.867 396.2 180 392.733 179.733 389.533L179.333 383.933L174.4 389.933Z" />
+                                    <path d="M142.133 313.133C140.267 314.867 140 319.8 140 346.067C140 363 140.533 376.333 141.067 375.533C152.4 362.6 152.667 362.2 153.333 346.733L154 332.333L161.067 337.133C165.067 339.667 168.4 341.667 168.533 341.4C168.667 341.133 170.4 339 172.4 336.6C174.4 334.067 176 331.667 176 331.133C176 330.6 173.6 328.733 170.667 327.133C167.6 325.4 161.6 321.133 157.067 317.533C148.4 310.6 145.467 309.667 142.133 313.133Z" />
+                                </svg>
+                                <span>
+                                    <p >Upload Audio File</p>
+                                </span>
+                            </div>
+                        </label>
+                        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                        <form id="upload-audio-form" enctype="multipart/form-data" method="post" action="/_api/transpose/upload_file" target="dummyframe">
+                            <input hidden type="file" id="upload-audio-button-input" accept=".wav,.mp3" name="audio-file" onchange="this.form.submit();" />
+                        </form>
+                    </div>
+                </div> 
+                <div class="select-inst">
+                    <div class="select-inst-container">
+                        <input hidden checked type="checkbox" class="select-inst select-vocal" id="select-inst-button-vocal">
+                        <label for="select-inst-button-vocal">
+                            <img src="static/asset/button-vocal.png" alt="Vocal">
+                        </label>
+                        <input hidden checked type="checkbox" class="select-inst select-bass" id="select-inst-button-bass">
+                        <label for="select-inst-button-bass">
+                            <img src="static/asset/button-bass.png" alt="Bass">
+                        </label>
+                        <input hidden checked type="checkbox" class="select-inst select-drum" id="select-inst-button-drum">
+                        <label for="select-inst-button-drum">
+                            <img src="static/asset/button-drum.png" alt="Drum">
+                        </label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <div class="submit-container">
+                        <input hidden type="checkbox" id="submit-button">
+                        <label for="submit-button" onclick = "submit_result()">
+                            <img id="banner-mixer" src="static/asset/banner-mixer1.png" alt="Transpose">
+                            <span class="submit-content">Transform</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <script>
+                update_progress = function(progress)
+                {
+                    var elem = document.querySelector("img#banner-mixer");
+                    elem.style.filter = "saturate("+progress+"%) contrast(150%) brightness(70%)"
+                }
+            </script>
+            <script>
+                submit_token = 0;
+                submit_result = function(){
+                    if (filename && submit_token==0){
+                        submit_token = 1;
+                        console.log("Trigger submit");
+                        file_folder = "media/"+"data/"+filename.slice(0, filename.lastIndexOf("."));
+                        file_path = file_folder +"/"+ filename;
+                        umx_progress = 0;
+                        rc_progress = 0
+                        var progress_count = 0
+                        start_app = '';
+                        output_dir = file_folder + "/separate/";
+                        var model_dir = 'umx/inference/model'
+                        var do_separate_bass = (document.querySelector("#select-inst-button-bass").checked)?1:0;
+                        var do_separate_vocals = (document.querySelector("#select-inst-button-vocal").checked)?1:0;
+                        var do_separate_drums = (document.querySelector("#select-inst-button-drum").checked)?1:0;
+                        inst_select = ['other'];
+                        if (do_separate_bass)(inst_select.push('bass'));
+                        if (do_separate_vocals)(inst_select.push('vocals'));
+                        if (do_separate_drums)(inst_select.push('drums'));
+                        var do_separate_other = 1;
+                        req_data = {
+                                        "file_path": file_path,
+                                        "model_dir": model_dir,
+                                        "output_dir": output_dir,
+                                        "do_separate_bass": do_separate_bass,
+                                        "do_separate_vocals": do_separate_vocals,
+                                        "do_separate_drums": do_separate_drums,
+                                        "do_separate_other": do_separate_other
+                                    };
+                        umx_sent_create = function(){
+                            console.log("trigger umx_sent_create");
+                            return new Promise((resolve, reject)=>{
+                                if (typeof(req_data) == 'undefined')
+                                {
+                                    setTimeout(()=>{}, 400);
+                                }
+                                $.ajax(
+                                    {
+                                        url: "/_api/model/umx/start/",
+                                        data: JSON.stringify(req_data),
+                                        method: "post",
+                                        contentType: 'application/json; charset=UTF-8',
+                                        dataType: "json",
+                                        success: function(data){
+                                            start_app = data['event_name'];
+                                            umx_data = data;
+                                            document.querySelector(".submit-content").innerText = start_app;
+                                            resolve(umx_data);
+                                        },
+                                        error: function(){
+                                            return new Error("Bad Request");
+                                        }
+                                    }   
+                                );
+                            })
+                            
+                        }
+                        umx_get_progress = function (){
+                            console.log("trigger umx_get_progress");
+                            for (i=0; i<20; i++)
+                            {
+                                if(typeof(umx_data)=="undefined")
+                                {
+                                    setTimeout(()=>{}, 500)
+                                }
+                                else{
+                                    console.log(umx_data);
+                                    break
+                                }
+                            }
+                            
+                            return new Promise((resolve, reject) => 
+                            {
+                                setTimeout(
+                                    function f(){
+                                        $.ajax(
+                                            {
+                                                url: "/_api/model/event_handler/get_progress",
+                                                data: JSON.stringify(umx_data),
+                                                method: "post",
+                                                contentType: 'application/json; charset=UTF-8',
+                                                dataType: "json",
+                                                success: function(data){
+                                                    if (umx_progress == data['progress'] && umx_progress>0 && umx_progress<100)
+                                                    {
+                                                        progress_count += 1
+                                                    }
+                                                    else
+                                                    {
+                                                        progress_count = 0
+                                                    }
+                                                    umx_progress = data['progress'];
+                                                    update_progress(umx_progress);
+                                                },
+                                            }
+                                        );
+                                        if(umx_progress<100 && progress_count<30)
+                                        {  
+                                            setTimeout(f, 500);
+                                        }
+                                    }, 500
+                                );
+                                resolve(umx_progress);
+                            })
+                            
+                        }
+                        async function rc_sent_create_elem(element){
+                            var rc_output_dir = file_folder + '/midi/';
+                            var rc_output_midi = rc_output_dir + "/" + element +".mid";
+                            var rc_input_music = file_folder + '/separate/' + element + ".mp3";
+                            rc_req_data = {
+                                        "input_music": rc_input_music,
+                                        "output_midi": rc_output_midi
+                                    };
+                            $.ajax(
+                                {
+                                    url: "/_api/model/runconvert/start/",
+                                    data: JSON.stringify(rc_req_data),
+                                    contentType: 'application/json; charset=UTF-8',
+                                    dataType: "json",
+                                    method: "post",
+                                    success: function(data){
+                                        start_app = data['event_name'];
+                                        rc_data = data;
+                                        document.querySelector(".submit-content").innerText = start_app;
+                                        
+                                    }
+                                }
+                            )
+                        }
+                        rc_sent_create = async function(element)
+                        {
+                            return new Promise(
+                                (resolve, reject)=>{
+                                    var rc_sent_create_elem = function(element)
+                                    {
+                                        var rc_output_dir = file_folder + '/midi/';
+                                        var rc_output_midi = rc_output_dir + "/" + element +".mid";
+                                        var rc_input_music = file_folder + '/separate/' + element + ".mp3";
+                                        rc_req_data = {
+                                                    "input_music": rc_input_music,
+                                                    "output_midi": rc_output_midi
+                                                };
+                                        $.ajax(
+                                            {
+                                                url: "/_api/model/runconvert/start/",
+                                                data: JSON.stringify(rc_req_data),
+                                                contentType: 'application/json; charset=UTF-8',
+                                                dataType: "json",
+                                                method: "post",
+                                                success: function(data){
+                                                    start_app = data['event_name'];
+                                                    rc_data = data;
+                                                    document.querySelector(".submit-content").innerText = start_app;
+                                                    
+                                                }
+                                            }
+                                        )
+                                        setTimeout(
+                                            function f()
+                                            {
+                                                rc_get_progress();
+                                                if (rc_progress<100)
+                                                {
+                                                    setTimeout(f, 1000);
+                                                }
+                                            }, 1000
+                                        );
+                                    }
+                                    console.log(element+" trigger.");
+                                    setTimeout(
+                                        function e()
+                                        {
+                                            if (umx_progress<100)
+                                            {
+                                                setTimeout(e, 1000)
+                                            }
+                                            else{
+                                                rc_sent_create_elem(element);
+                                                resolve('1');
+                                            }
+                                        }, 500
+                                    );
+                                })
+                        }
+                        
+                        function rc_get_progress(){
+                            $.ajax(
+                                {
+                                    url: "/_api/model/event_handler/get_progress",
+                                    data: JSON.stringify(rc_data),
+                                    method: "post",
+                                    contentType: 'application/json; charset=UTF-8',
+                                    dataType: "json",
+                                    success: function(data){
+                                        rc_query_data = data;
+                                        if (rc_progress == data['progress'] && rc_progress>0 && rc_progress<100)
+                                        {
+                                            progress_count += 1;
+                                        }
+                                        else
+                                        {
+                                            progress_count = 0;
+                                        }
+                                        rc_progress = data['progress'];
+                                        update_progress(rc_progress);
+                                    }
+                                }
+                            );
+                        }
+                        
+                        midi2sheet_sent_create = function(){
+                            console.log("trigger midi2sheet_sent_create");
+                            return new Promise(
+                                (resolve, reject)=>{
+                                    execute_midi_create = function (){
+                                        var base_dir = file_folder;
+                                        var midi2sheet_req_data = {"base_dir":base_dir};
+                                        $.ajax(
+                                                    {
+                                                        url: "/_api/model/midi2sheet",
+                                                        data: JSON.stringify(midi2sheet_req_data),
+                                                        contentType: 'application/json; charset=UTF-8',
+                                                        dataType: "json",
+                                                        method: "post",
+                                                        success: function(data){
+                                                            midi2sheet_data = data;
+                                                            start_app = data['event_name'];
+                                                            document.querySelector(".submit-content").innerText = start_app;
+                                                        }
+                                                    }
+                                                )
+                                    }
+                                    setTimeout(function f(){
+                                        rc_get_progress();
+                                        if (rc_progress != 100)
+                                        {
+                                            setTimeout(f, 1000)
+                                        }else{
+                                            execute_midi_create();
+                                            resolve(1);
+                                        }
+                                    }, 1000);
+                                }
+                            );
+                        }
+
+                        midi2sheet_get_progress = function(){
+                            for (i=0; i<20; i++)
+                            {
+                                if(typeof(midi2sheet_data)=="undefined")
+                                {
+                                    setTimeout(midi2sheet_get_progress, 1000)
+                                }
+                                else{
+                                    console.log(midi2sheet_data);
+                                    break
+                                }
+                            }
+                            
+                            return new Promise((resolve, reject) => 
+                            {
+                                setTimeout(
+                                    function f(){
+                                        $.ajax(
+                                            {
+                                                url: "/_api/transpose/check_pid_working",
+                                                data: JSON.stringify({"user_pid":midi2sheet_data["pid"]}),
+                                                method: "post",
+                                                contentType: 'application/json; charset=UTF-8',
+                                                dataType: "json",
+                                                success: function(data){
+                                                    is_working = data["working"]
+                                                    if(is_working)
+                                                    {  
+                                                        setTimeout(f, 500);
+                                                    }
+                                                    else
+                                                    {
+                                                        document.querySelector(".submit-content").innerText = 'Done';
+                                                        update_progress(100);
+                                                    }
+                                                },
+                                            }
+                                        );
+                                        
+                                    }, 1000
+                                );
+                                resolve(1);
+                            })
+                        }
+
+                        async function workflow()
+                        {
+                            await umx_sent_create();
+                            await umx_get_progress();
+                            if (inst_select.includes('other')) await rc_sent_create('other');
+                            if (inst_select.includes('vocals')) await rc_sent_create('vocals');
+                            if (inst_select.includes('drums')) await rc_sent_create('drums');
+                            if (inst_select.includes('bass')) await rc_sent_create('bass');
+                            await midi2sheet_sent_create();
+                            await midi2sheet_get_progress();
+                        }
+
+                        workflow()
+                    }
+                }
+            </script>
+            <script>
+                document.getElementById("upload-audio-button-input").addEventListener("change", (event)=>{
+                    console.log("Detect change.")
+                    event_trig = event;
+                    filename = event.target.files[0].name.replace(new RegExp(" ", "g"), "_");
+                    var target_id = event.target.id;
+                    var target_label = document.querySelector("[for="+target_id+"]")
+                    target_label.querySelector("span>p").innerText = "Uploaded : " + filename;
+
+                })
+            </script>
+        </div>
+    </body>
+</html>

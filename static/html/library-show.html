@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/library_show_style.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="source/cspd-player.js"></script>
+    </head>
+    <body>
+        <div class="library-show-main">
+            <div class="library-show-container">
+                <div class="top-nav">
+                    <div class="previous-page">
+                        <svg class="previous-page-icon" viewBox="0 0 81 81" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.1404 0.745168C29.3386 1.49866 21.5996 4.68531 15.5402 9.61442C13.7507 11.0586 10.9251 13.9156 9.51226 15.6895C5.91747 20.1947 2.96628 26.2855 1.74186 31.7483C0.972663 35.1704 0.799988 36.8501 0.799988 40.7745C0.799988 44.699 0.972663 46.3786 1.74186 49.8008C2.98198 55.3735 6.01165 61.5584 9.73203 66.1265C11.1762 67.916 14.0332 70.7416 15.8071 72.1544C20.3123 75.7492 26.4031 78.7004 31.8659 79.9248C35.288 80.694 36.9677 80.8667 40.8921 80.8667C44.8166 80.8667 46.4963 80.694 49.9184 79.9248C54.0155 79.0144 59.3841 76.7225 62.9161 74.3835C69.0226 70.3178 73.7162 64.9805 76.9343 58.4346C78.8965 54.4316 80.011 50.8368 80.7174 46.2688C81.0942 43.7414 81.0942 37.8077 80.7174 35.2803C80.011 30.7123 78.8965 27.1175 76.9343 23.1145C74.8308 18.8447 72.4918 15.5796 69.1168 12.2516C65.8045 8.97081 62.7749 6.82021 58.5522 4.7481C54.5963 2.80158 50.923 1.65564 46.5433 0.980635C44.5654 0.682377 39.1968 0.556794 37.1404 0.745168ZM44.5811 7.49522C54.8789 8.65686 64.0935 14.5592 69.5563 23.507C73.8732 30.6024 75.3488 39.1734 73.6848 47.5246C71.911 56.4252 66.1499 64.5567 58.1597 69.4387C51.0643 73.7556 42.4933 75.2312 34.1421 73.5672C25.2414 71.7934 17.11 66.0323 12.228 58.0421C9.77912 53.9921 8.14655 49.22 7.61283 44.4635C7.26748 41.324 7.45585 37.2896 8.09946 34.0245C9.87331 25.1238 15.6344 16.9924 23.6246 12.1104C27.5647 9.70861 32.4467 8.02894 36.9677 7.51092C38.6474 7.32254 42.9172 7.30685 44.5811 7.49522Z" />
+                            <path d="M46.2294 21.011C45.6957 21.2465 43.4823 23.3657 37.0776 29.7547C32.431 34.3855 28.3967 38.4984 28.1298 38.8908C27.6746 39.5344 27.6275 39.7071 27.6275 40.7745C27.6275 41.842 27.6746 42.0147 28.1298 42.6583C28.3967 43.0507 32.431 47.1635 37.0776 51.7944C45.9625 60.6636 46.198 60.852 47.5637 60.8677C48.2544 60.8677 49.6201 60.3026 50.0282 59.8317C50.4835 59.3136 50.9387 58.152 50.9387 57.4927C50.9387 56.1427 50.6719 55.8287 42.9642 48.1054L35.6334 40.7745L42.9642 33.428C50.6719 25.7204 50.923 25.4221 50.9387 24.0564C50.9387 23.3657 50.3736 22 49.9027 21.5918C49.3846 21.1366 48.223 20.6814 47.5637 20.6814C47.2183 20.6814 46.6218 20.8383 46.2294 21.011Z" />
+                        </svg>
+                    </div>
+                    <div class="inst-select">
+                        <select name="" id="select-inst-button">
+                            <option value="Vocal">Vocal</option>
+                            <option value="Bass">Bass</option>
+                            <option value="Drum">Drum</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="transcript">
+                    <img src="asset/merged-01.png" class="myslide">
+                    <img src="asset/merged-02.png" class="myslide">
+                    <img src="asset/merged-03.png" class="myslide">
+                    <img src="asset/merged-01.png" class="myslide">
+                    <img src="asset/merged-02.png" class="myslide">
+                    <img src="asset/merged-03.png" class="myslide">
+                    <img src="asset/merged-01.png" class="myslide">
+                    <img src="asset/merged-02.png" class="myslide">
+                    <img src="asset/merged-03.png" class="myslide">
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+                <div class="player">
+                    <div class="left"></div>
+                    <div class="right">
+                       <div class="top">
+                          <a class="song" href="https://open.spotify.com/track/52LlzTfdulBMiwH4BZy5Sq?si=1c1rwqNYSf6ZaaRbzlstLQ">Let's Go To the Forest</a>
+                          <a class="artist" href="https://open.spotify.com/artist/6OqhFYFJDnBBHas02HopPT?si=vQaSwY1DRkyhj-eoKZlMrw">Kero Kero Bonito</a>
+                       </div>
+                       <div class="bottom">
+                          <video controls="" _autoplay="" name="media"><source src="https://i.koya.io/Kero%20Kero%20Bonito%20-%20Let's%20Go%20To%20The%20Forest.mp3" type="audio/mpeg"></video>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("myslide");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </body>
+</html>

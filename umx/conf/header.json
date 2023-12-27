@@ -1,0 +1,1 @@
+{"file_path": "media/data/Misery/Misery.mp3", "model_dir": "umx/inference/model", "output_dir": "media/data/Misery/separate/", "do_separate_bass": 1, "do_separate_vocals": 1, "do_separate_drums": 1, "do_separate_other": 1}

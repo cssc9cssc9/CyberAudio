@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/library_style.css" type="text/css">
+    </head>
+    <body>
+        <div class="library-main">
+            <div class="library-container">
+                {% for data in collection %}
+                <a onclick="ajaxLoad('{{ data.detail_page_path }}', 'main-container')">
+                    <div class="item">
+                        <div class="item-nav">
+                            <h2 class="item-name">{{ data.name }}</h2>
+                            {% if data.select_inst.vocals %}<div class="icon icon-vocal">Vocal</div> {% endif %}
+                            {% if data.select_inst.drums %}<div class="icon icon-drum">Drum</div> {% endif %}
+                            {% if data.select_inst.bass %}<div class="icon icon-bass">Bass</div> {% endif %}
+                        </div>
+                        <div class="transcript">
+                            {% for sheet in data.sheet %}
+                            <img src="/{{ sheet.filepath }}" class="sheet {{ sheet.name }} ">
+                            {% endfor %}
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
